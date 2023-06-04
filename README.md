@@ -29,7 +29,7 @@ Core Python libraries needed for the analysis:
 ## Project Motivations <a name="motivation"></a>
 In this project, a CNN (Convolutional Neural Networks) model was built for identifying dog breed for a given image of dog.
 In order to train this model, 8351 images of dogs of 133 breeds were used. In addition, pre-trained transfer learning model was embedded into the model aiming at achieving better prediction accuracy as well as higher training efficiency. 
-There are three goals that motivate the development of such model:
+There are three goals/ questions that motivate the development of such model:
 - Given an image of dog, can the model be able to accurately determine its breed?
 - Given an image of human (face), can the model be able to provide a dog breed that resembles the facial characteristics of the human?
 - Given an image of neither a dog nor a human, can the model be able to tell the state and provide a warning message?
