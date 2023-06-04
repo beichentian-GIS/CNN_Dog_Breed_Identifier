@@ -52,7 +52,7 @@ There are three goals that motivate the development of such model:
 
 ## Results <a name="result"></a>
 The model (embedded with pre-trained ResNet50 bottleneck features) reached an overall test accuracy of 83.85%.
-The model's predicted dog breeds sometimes do not exactly match the actual dog breeds yet under the same breed categories (for instance, the model may return "Golden retriever" while the correct breed is "Labrador retriever"). The occurrence of such issue can be due to either the model's potential defects or the quality of the given images such as resolution, brightness, etc.
+The model's predicted dog breeds sometimes do not exactly match the actual dog breeds yet are under the same breed categories (for instance, the model may return "Golden retriever" while the correct breed is "Labrador retriever"). The occurrence of such issue can be introduced by either the model's potential defects or the quality of the given images such as resolution, brightness, etc.
 More details can be found at [this blog post](https://medium.com/@btiangis91/use-cnn-to-identify-dog-breeds-2ff542e589a4) on Medium.
 
 
