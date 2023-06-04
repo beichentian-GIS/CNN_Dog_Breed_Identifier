@@ -58,7 +58,7 @@ More details can be found at [this blog post](https://medium.com/@btiangis91/use
 
 ## Improvements <a name="improvement"></a>
 - The model parameters (number of layers, number of nodes, dropout threshold, etc.) may be adjusted to achieve a better result.
-- Segment human face or dog out of the image background using [SAM](https://segment-anything.com/)(Segment Anything Model) to have the model only focused on what truly needs to be predicted.
+- Segment human face or dog out of the image background using [SAM](https://segment-anything.com/) (Segment Anything Model) to have the model only focused on what truly needs to be predicted.
 - Apply data augmentation techniques consisted of image translations, horizontal reflections, and mean subtraction.
 
 
