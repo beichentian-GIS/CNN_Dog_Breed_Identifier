@@ -4,7 +4,7 @@
 ## Table of Contents
 
 1. [Installations](#installation)
-2. [Project Motivation](#motivation)
+2. [Project Motivations](#motivation)
 3. [File Descriptions](#description)
 4. [Results](#result)
 5. [Licensing, Authors, Acknowledgements](#licensingetc)
