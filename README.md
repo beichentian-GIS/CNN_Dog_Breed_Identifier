@@ -6,8 +6,8 @@
 1. [Installations](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#description)
-4. [Results](#result)
-5. [Improvements](#improvement)
+4. [Conclusion](#conclusion)
+5. [Future Improvements](#improvement)
 6. [Licensing, Authors, Acknowledgements](#licensingetc)
 
 
@@ -27,8 +27,9 @@ Core Python libraries needed for the analysis:
 
 
 ## Project Motivations <a name="motivation"></a>
-In this project, a CNN (Convolutional Neural Networks) model was built for identifying dog breed for a given image of dog.
-In order to train this model, 8351 images of dogs of 133 breeds were used. In addition, pre-trained transfer learning model was embedded into the model aiming at achieving better prediction accuracy as well as higher training efficiency. 
+In this project, a CNN (Convolutional Neural Networks) model was built for identifying dog breed for a given image of dog. 
+In order to train this model, 8,351 images of dogs of 133 breeds were used. 
+In addition, pre-computed bottleneck features based on ResNet50 network was embedded into the model to achieve better prediction accuracy as well as higher training efficiency. 
 There are three goals/ questions that motivate the development of such model:
 - Given an image of dog, can the model be able to accurately determine its breed?
 - Given an image of human (face), can the model be able to provide a dog breed that resembles the facial characteristics of the human?
@@ -50,16 +51,19 @@ There are three goals/ questions that motivate the development of such model:
 		Resnet50.h5: saved model architecture
 
 
-## Results <a name="result"></a>
+## Conclusion <a name="conclusion"></a>
 The model (embedded with pre-trained ResNet50 bottleneck features) reached an overall test accuracy of 83.85%.
-The model's predicted dog breeds sometimes do not exactly match the actual dog breeds yet are under the same breed categories (for instance, the model may return "Golden retriever" while the correct breed is "Labrador retriever"). The occurrence of such issue can be introduced by either the model's potential defects or the quality of the given images such as resolution, brightness, etc.
-More details can be found at [this blog post](https://medium.com/@btiangis91/use-cnn-to-identify-dog-breeds-2ff542e589a4) on Medium.
+The model's predicted dog breeds sometimes do not exactly match the actual dog breeds yet are under the same breed categories. 
+The occurrence of such issue may be introduced by variations in amounts of images across dog breeds. For two breeds under the same category, it is more likely for the model to provide an answer of the breed with more training images. 
+Other factors that may cause inaccuracy prediction may include but are not limited to the model’s potential defects, the quality of the given images such as resolution, brightness, etc.
+More details can be found at [this blog post](https://medium.com/@btiangis91/use-cnn-to-identify-dog-breeds-v2-a11acfd79038) on Medium.
 
 
-## Improvements <a name="improvement"></a>
+## Future Improvements <a name="improvement"></a>
+- Increase the amount of training images to no less than 50 or 60 for each dog breed whose original training images are less than 40.
 - The model parameters (number of layers, number of nodes, dropout threshold, etc.) may be adjusted to achieve a better result.
 - Segment human face or dog out of the image background using [SAM](https://segment-anything.com/) (Segment Anything Model) to have the model only focused on what truly needs to be predicted.
-- Apply data augmentation techniques consisted of image translations, horizontal reflections, and mean subtraction.
+- Apply data augmentation techniques consisted of image translations, horizontal reflections, and mean subtraction to artificially provide more features to train..
 
 
 ## Licensing, Authors, Acknowledgements <a name="licensingetc"></a>
