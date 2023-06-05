@@ -63,7 +63,7 @@ More details can be found at [this blog post](https://medium.com/@btiangis91/use
 - Increase the amount of training images to no less than 50 or 60 for each dog breed whose original training images are less than 40.
 - The model parameters (number of layers, number of nodes, dropout threshold, etc.) may be adjusted to achieve a better result.
 - Segment human face or dog out of the image background using [SAM](https://segment-anything.com/) (Segment Anything Model) to have the model only focused on what truly needs to be predicted.
-- Apply data augmentation techniques consisted of image translations, horizontal reflections, and mean subtraction to artificially provide more features to train..
+- Apply data augmentation techniques consisted of image translations, horizontal reflections, and mean subtraction to artificially provide more features to train.
 
 
 ## Licensing, Authors, Acknowledgements <a name="licensingetc"></a>
